@@ -8,8 +8,10 @@ bisa di panggil berulang kali.
 contoh:
 """
 
-def fungsi(nama):
-    print("Hy nama saya ", nama)
+def hitung (a, b):
+    return a*b
 
-fungsi("koko")
 
+jumlah = hitung(3,5)
+print("Hasil perkalian antara a dan b adalah :", jumlah)
+    
