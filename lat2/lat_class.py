@@ -9,13 +9,8 @@
 # my_dog = Dog("BullDog")
 # another_dog = Dog("PitBull")
 
-
-
 # print(my_dog.speak("Grrrrr"))
 # print(another_dog.speak("Guk Guk"))
-
-
-
 
 class Profile:
     def __init__(self, nama, nip):
@@ -39,7 +34,7 @@ class Profile:
         print("--------------------")
         
         if self.riwayat_pendidikan:
-            for data in self.riwayat_pendidikan:
+            for i, data in enumerate(self.riwayat_pendidikan):
                 print (f"{data['universitas']}")
                 print("--------------------")
 
@@ -49,6 +44,3 @@ profile.tambah_pendidikan("S1", "STMIK BINA MANGSA", 2004)
 profile.tambah_pendidikan("S2", "UNIVERSITAS ISLAM SULTAN AGUNG", 2014)
 profile.tambah_pendidikan("S3", "MIT University", 2027)
 profile.tampilkan_riwayat()
-
-
-
