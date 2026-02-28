@@ -9,6 +9,8 @@ print(myList[0:6:2])
 print(myList[::3])
 print(myList[::-2])
 
+
+
 print("==========================================")
 print("======== LIST WITH RANGE ======")
 

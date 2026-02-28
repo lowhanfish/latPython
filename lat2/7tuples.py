@@ -23,5 +23,9 @@ myList1 = list(set(myList))
 print(myList1)
 print("==================================")
 
+newList = [('A', 2),('B', 3),('C', 2),]
+newList[-1][1] = 4
+# datax = newList[-1][1]
 
+print(newList)
 

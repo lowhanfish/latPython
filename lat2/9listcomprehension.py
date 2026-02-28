@@ -1,7 +1,4 @@
 
-
-
-
 data1 = list(range(50))
 # print("data awal : ", data1)
 
@@ -26,7 +23,4 @@ def clear_text (txt):
 
 coba1 = [clear_text(data) for data in nama.split()]
 print (coba1)
-
-
-
 
