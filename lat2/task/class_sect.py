@@ -39,12 +39,7 @@ def encodeString (kata):
     else:
         return []
 
-
-
-
 kata = "AAAAIIUUUEOOOOAII"
-
-
 
 def decodeString(arr):
     text_arr = []
@@ -54,9 +49,31 @@ def decodeString(arr):
 
 arrx = [('A', 4), ('I', 2), ('U', 3), ('E', 1), ('O', 4), ('A', 1), ('I', 2)]
 
-result1 = encodeString(kata)
-result2 = decodeString(arrx)
-print (result1)
-print (result2)
+# result1 = encodeString(kata)
+# result2 = decodeString(arrx)
+# print (result1)
+# print (result2)
 
 
+# ============== EVALUATION ==============
+
+words = "AAAAIIUUUEOOOOAII"
+
+if not kata:
+    print("Empty Chara!")
+else:
+    char = words[0]
+    count = 1
+    data_list = [] #(char, count)
+
+    for data in words[1:] :
+        if char == data:
+            count +=1
+        else:
+            data_list.append((char, count))
+            char = data
+            count = 1
+
+    data_list.append((char, count))
+
+    print(data_list)
