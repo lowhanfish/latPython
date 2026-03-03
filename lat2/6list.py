@@ -60,3 +60,13 @@ print(b)
 print(c)
 
 print("--------------------")
+
+
+
+data_sorting = [{"a":3}, {"a":1}, {"a":2}, {"a":4}]
+# srtx = sorted(data_sorting, key=lambda x:x['a'])
+srtx = sorted(data_sorting)
+
+
+print(srtx)
+

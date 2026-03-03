@@ -57,23 +57,50 @@ arrx = [('A', 4), ('I', 2), ('U', 3), ('E', 1), ('O', 4), ('A', 1), ('I', 2)]
 
 # ============== EVALUATION ==============
 
-words = "AAAAIIUUUEOOOOAII"
+words = "AAAAIIIUAAEEOOIIIUUUUU"
 
-if not kata:
-    print("Empty Chara!")
+#[("A":4),("I":3),("U":1),("A":2)...]
+
+
+
+if not words:
+    print([])
 else:
     char = words[0]
     count = 1
-    data_list = [] #(char, count)
-
-    for data in words[1:] :
+    list_data = []
+    for data in words[1:]:
         if char == data:
-            count +=1
+            count += 1
         else:
-            data_list.append((char, count))
-            char = data
+            list_data.append((char, count))
             count = 1
+            char = data
 
-    data_list.append((char, count))
+    list_data.append((char, count))
 
-    print(data_list)
+    print(list_data)
+
+
+print("=======================")
+data_list = [('A', 4), ('I', 3), ('U', 1), ('A', 2), ('E', 2), ('O', 2), ('I', 3), ('U', 5)]
+
+if len(data_list) <1:
+    print("Array Kosong gez!")
+else:
+    text = ""
+    listx = []
+    for data in data_list:
+        for countx in range(data[1]):
+            listx.append(data[0])
+    text = "".join(listx)
+    print(text)
+
+
+# [{"A": 6}, {"I": 6}]
+
+
+for data in data_list:
+    pass
+
+
